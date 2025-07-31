@@ -1,6 +1,6 @@
 // src/pages/HomePage.jsx
 
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import Herosection from '../components/Herosection';
 import SolutionSection from '../components/SolutionSection';
 import HighlightSection from '../components/HighlightSection';

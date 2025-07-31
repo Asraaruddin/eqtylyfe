@@ -1,6 +1,6 @@
 // src/pages/HowItWorksPage.jsx
 
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import HowEquityLyfeWorks2 from '../components/HowEquityLyfeWorks2';
 import OurSolution from '../components/OurSolution';
 import EqtyLyfeProcess from '../components/EqtyLyfeProcess';
