@@ -36,7 +36,7 @@ const HowItWorks = () => {
     <section className="bg-[#f9fafe] py-20 px-4" id="how-it-works">
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
-        <h2 className="text-[36px] md:text-[48px] leading-[1.2] font-semibold tracking-[-0.012em] text-[#265CE1] font-['IBM Plex Serif'] text-center mb-16">
+        <h2 style={{ fontFamily: 'IBM Plex Serif, serif' }}  className="text-[36px] md:text-[48px] leading-[1.2] font-semibold tracking-[-0.012em] text-[#265CE1] font-['IBM Plex Serif'] text-center mb-16">
           How EQTY LYFE Works
         </h2>
 
@@ -54,7 +54,7 @@ const HowItWorks = () => {
 
               {/* Text Content */}
               <div className="flex-1 text-center md:text-left md:pr-6 mb-6 md:mb-0">
-                <h3 className="text-[20px] md:text-[22px] font-semibold text-[#265CE1] mb-2 leading-tight font-['IBM Plex Serif']">
+                <h3 style={{ fontFamily: 'IBM Plex Serif, serif' }} className="text-[20px] md:text-[22px] font-semibold text-[#265CE1] mb-2 leading-tight font-['IBM Plex Serif']">
                   {step.title}
                 </h3>
                 <p className="text-sm md:text-base text-gray-700 leading-snug max-w-[600px] mx-auto md:mx-0">
