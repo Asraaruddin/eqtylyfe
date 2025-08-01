@@ -20,7 +20,10 @@ const AchieveGoal = () => {
 
       {/* Heading */}
       <div className="z-10 text-center md:text-left max-w-[999px] w-full mb-8">
-        <h1 style={{ fontFamily: 'IBM Plex Serif, serif' }} className="text-[#265CE1] text-[32px] md:text-[48px] font-semibold font-['IBM Plex Serif'] leading-[48px] mb-4">
+        <h1
+          style={{ fontFamily: "IBM Plex Serif, serif" }}
+          className="text-[#265CE1] text-[32px] md:text-[48px] font-semibold font-['IBM Plex Serif'] leading-[48px] mb-4"
+        >
           Achieve Your Financial Goal
         </h1>
         <p className="text-[#6B7280] text-[18px] md:text-[20px] font-normal font-['Inter']">
@@ -29,7 +32,7 @@ const AchieveGoal = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mt-6 flex flex-col lg:flex-row flex-wrap gap-10 justify-center items-center w-full max-w-[1200px]">
+      <div className="relative z-10 mt-6 flex flex-col-reverse lg:flex-row flex-wrap gap-10 justify-center items-center w-full max-w-[1200px]">
         {/* Cards */}
         <div className="flex flex-col gap-4 items-center">
           {[
@@ -43,9 +46,11 @@ const AchieveGoal = () => {
             <div
               key={i}
               style={{ fontFamily: "IBM Plex Serif, serif" }}
-              className={`w-[329px] h-[73px] rounded-[10px] shadow-[0px_3px_6px_2px_rgba(38,50,56,0.25)] ${
-                i === 0 ? "bg-[#DDE7FE] text-[#265CE1]" : "bg-white text-[#265CE1]"
-              } flex items-center justify-center text-lg font-semibold text-center`}
+              className={`w-[290px] md:w-[329px] h-[65px] md:h-[73px] rounded-[10px] shadow-[0px_3px_6px_2px_rgba(38,50,56,0.25)] ${
+                i === 0
+                  ? "bg-[#DDE7FE] text-[#265CE1]"
+                  : "bg-white text-[#265CE1]"
+              } flex items-center justify-center text-[15px] md:text-lg font-semibold text-center`}
             >
               {text}
             </div>
@@ -53,16 +58,15 @@ const AchieveGoal = () => {
         </div>
 
         {/* Illustration + Message */}
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col items-center gap-4">
           <img
             src={Amico}
             alt="Amico Illustration"
-            className="w-[300px] md:w-[400px] max-w-full"
+            className="w-[260px] md:w-[400px] max-w-full"
           />
-         <div className="mt-4 bg-[#DDE7FE] w-full max-w-[577px] h-[68px] rounded-[10px] shadow-md flex items-center justify-center px-4 text-center text-black font-['Inter'] whitespace-nowrap text-[clamp(14px,2.5vw,18px)] leading-tight">
-  Have your home equity help you pay off student loans.
-</div>
-
+          <div className="bg-[#DDE7FE] w-full max-w-[320px] md:max-w-[577px] h-auto min-h-[60px] rounded-[10px] shadow-md flex items-center justify-center px-4 py-3 text-center text-black font-['Inter'] text-[14px] md:text-[18px] leading-tight">
+            Have your home equity help you pay off student loans.
+          </div>
         </div>
       </div>
     </div>
